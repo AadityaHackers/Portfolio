@@ -7,6 +7,7 @@ const navMenu = document.getElementById('nav-menu'),
 if(navToggle){
    navToggle.addEventListener('click', () =>{
       navMenu.classList.add('show-menu')
+      document.body.classList.add('show-menu')
    })
 }
 
@@ -14,6 +15,7 @@ if(navToggle){
 if(navClose){
    navClose.addEventListener('click', () =>{
       navMenu.classList.remove('show-menu')
+      document.body.classList.remove('show-menu')
    })
 }
 
@@ -23,6 +25,7 @@ const navLink = document.querySelectorAll('.nav__link, .nav__contact')
 const linkAction = () =>{
    const navMenu = document.getElementById('nav-menu')
    navMenu.classList.remove('show-menu')
+   document.body.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 

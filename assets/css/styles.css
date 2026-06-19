@@ -219,12 +219,13 @@ button {
     top: 0;
     right: -120%;
     width: 80%;
-    height: 100%;
+    height: 100vh;
     background-color: hsla(var(--hue), 8%, 10%, 0.4);
     backdrop-filter: blur(24px);
     padding: 6rem 2rem 2rem 3rem;
     z-index: var(--z-fixed);
     transition: right 0.4s;
+    overflow-y: auto;
   }
 }
 
@@ -286,6 +287,10 @@ button {
 /* Show menu */
 .show-menu{
   right: 0;
+}
+
+body.show-menu{
+  overflow: hidden;
 }
 
 /* Change header styles */
@@ -692,7 +697,7 @@ button {
 /*=============== CONTACT SECTION ===============*/
 .contact__content {
   grid-template-columns: 1fr;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .contact__form {
