@@ -272,7 +272,7 @@ button {
 }
 
 .nav__contact:hover{
-  box-shadow: 0 8px 24px hsla(var(--hue), 75%, 60%, 0.3);
+  box-shadow: 0 8px 24px hsla(var(--hue), 75%, 60%, 0.7);
 }
 
 .nav__close{
