@@ -33,16 +33,17 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 const header = document.getElementById('header')
 
 const changeHeader = () => {
-   // Only apply scroll effect on desktop (width >= 1150px)
-   if(window.innerWidth >= 1150){
-      if(window.scrollY >= 80){
-         header.classList.add('bg-header')
-      } else {
-         header.classList.remove('bg-header')
-      }
+   if(window.scrollY >= 80){
+      header.classList.add('bg-header')
+   } else {
+      header.classList.remove('bg-header')
    }
 }
-window.addEventListener('scroll', changeHeader)
+
+// Only add scroll listener on desktop screens
+if(window.innerWidth >= 1150){
+   window.addEventListener('scroll', changeHeader)
+}
 
 /*=============== ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
