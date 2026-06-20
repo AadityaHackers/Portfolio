@@ -907,6 +907,44 @@ body.show-menu{
 
 
 /*=============== BREAKPOINTS ===============*/
+/* For small devices (mobile phones) <> */
+@media (width <= 540px){
+  .contact__form,
+  .contact__info {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact__button {
+    padding: 1rem;
+    min-height: 48px;
+    font-size: var(--normal-font-size);
+  }
+
+  .contact__input,
+  .contact__textarea {
+    padding: 0.75rem;
+    min-height: 44px;
+  }
+
+  .contact__group {
+    margin-bottom: 1rem;
+  }
+
+  .contact__list li {
+    gap: 0.75rem;
+  }
+
+  .contact__social {
+    justify-content: space-around;
+  }
+
+  .contact__social-link {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
 /* For medium devices <> */
 @media (width >= 540px){
   .nav__menu{
